@@ -12,7 +12,7 @@ class Note(db.Model):
     def serial(self):
         return {
             "id_note": self.id_note,
-            "text": self.text,
+            "text": self.text
         }
 
     def save(self):
@@ -25,4 +25,17 @@ class Note(db.Model):
 
     def update(self, text):
         self.text = text
-        Note.save()
+
+    @classmethod
+    def find_note_key_user(cls, id):
+        notes = cls.query.filter_by(key_user = id).all()
+        if notes:
+            return notes
+        return None
+
+    @classmethod
+    def find_note(cls, id):
+        note = cls.query.filter_by(id_note = id).first()
+        if note:
+            return note
+        return None

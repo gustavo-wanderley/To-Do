@@ -28,10 +28,18 @@ class User(db.Model):
         db.session.commit()
 
     def check_password(self, password):
-        return self.password == password:
-            
+        return self.password == password
+
+
     @classmethod
-    def find_user(cls, login):
+    def find_user(cls, id):
+        user = cls.query.filter_by(id = id).first()
+        if user:
+            return user
+        return None
+
+    @classmethod
+    def find_user_login(cls, login):
         user = cls.query.filter_by(login = login).first()
         if user:
             return user

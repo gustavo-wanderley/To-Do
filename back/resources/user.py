@@ -14,4 +14,24 @@ class Users(Resource):
             return user.serial(), 201
         except:
             return {"message":"error"}, 500
-    
+    def get(self, id):
+        user = User.find_user(id)
+        if user:
+            return user.serial(), 200
+        return {"message":"not found"}, 404
+    def put(self, id):
+        user = User.find_user(id)
+        if user:
+            try:
+                return {"message": "atualizado"}, 200
+            
+            except:
+                return {"message": "error intern"}, 500
+        return {"message": "not found"}, 404
+        pass
+
+    def delete(self):
+        """
+        caso existisse um adm o usuario só seria desativado
+        """
+        return {"message": "not found"}, 404
