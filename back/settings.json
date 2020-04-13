@@ -1,0 +1,7 @@
+{
+
+    "Data_base_uri": "",
+    "key_secret":"flask_e_massa",
+    "track_modifications": false,
+    "enable_jwt": true
+}

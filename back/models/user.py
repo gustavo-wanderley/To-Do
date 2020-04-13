@@ -11,6 +11,11 @@ class User(db.Model):
         self.name = name
         self.login = login
         self.password = password
+    
+    def update(self, name, login, password):
+        self.name = name
+        self.login = login
+        self.password = password
 
     def serial(self):
         return {
