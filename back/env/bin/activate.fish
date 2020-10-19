@@ -57,7 +57,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/home/gustavo/Área de Trabalho/Todo-List-Flask-Flutter/back/env"
+set -gx VIRTUAL_ENV "/home/gustavo/Área de Trabalho/To-Do/back/env"
 
 # https://github.com/fish-shell/fish-shell/issues/436 altered PATH handling
 if test (echo $FISH_VERSION | tr "." "\n")[1] -lt 3

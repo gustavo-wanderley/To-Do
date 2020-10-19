@@ -1,5 +1,5 @@
 #!/bin/sh
-'''exec' "/home/gustavo/Área de Trabalho/Todo-List-Flask-Flutter/back/env/bin/python3" "$0" "$@"
+'''exec' "/home/gustavo/Área de Trabalho/To-Do/back/env/bin/python3" "$0" "$@"
 ' '''
 # -*- coding: utf-8 -*-
 import re

@@ -28,7 +28,7 @@ def _deactivate(args):
 _deactivate(["nondestructive"])
 aliases["deactivate"] = _deactivate
 
-$VIRTUAL_ENV = r"/home/gustavo/Área de Trabalho/Todo-List-Flask-Flutter/back/env"
+$VIRTUAL_ENV = r"/home/gustavo/Área de Trabalho/To-Do/back/env"
 
 $_OLD_VIRTUAL_PATH = $PATH
 $PATH = $PATH[:]
